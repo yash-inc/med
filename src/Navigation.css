@@ -1,0 +1,41 @@
+/* .navbar_style{
+    position: fixed;
+} */
+.navbar{
+    height: 75px;
+    max-width: 1279px;
+    background-attachment: scroll;
+    position:sticky;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-style:solid ;   
+}
+.nav_element{
+    height: 25px;
+    width:max-content;
+    box-sizing: inherit;
+    /* background-color: black;  */
+    color:#282828; 
+    margin-right:25px;
+    line-height: 20px;
+    
+} 
+.mainlogo{
+    height:25px ;
+    width: 156px;
+    background: url('./images/medium-logo.png') no-repeat;
+    box-sizing: border-box;
+    display: block;
+    flex: .9 0 auto;
+    cursor: pointer;
+    
+    
+}

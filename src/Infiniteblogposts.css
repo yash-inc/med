@@ -1,0 +1,201 @@
+.infitescrollentiresection{
+    height: 1500px;
+    width: 1279px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(230, 230, 230, 1);
+    display: block;
+    /* background-color: black; */
+
+}
+.infitescrolltwoblocks{
+    /* height: 100%;
+    width: 100%; */
+    display:flex;
+    justify-content: center;
+    /* margin: 0px 64px; */
+    /* background-color: green; */
+}
+.IScrolltwoCoulmn{
+    height: 1500px;
+    width: 100%;
+    max-width: 1192px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* margin: 0px 64px;*/
+    /* background-color: green;  */
+}
+.scrollsection{
+    height: 1500px;
+    width: 670px;
+    box-sizing: border-box;
+    display: block;
+    /* background-color: yellow; */
+}
+
+.post{
+    height: 135px;
+    width: 670px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 48px;
+    /* background-color: yellowgreen; */
+}
+.postimg{
+    height: 134px;
+    width: 200px;
+    background:url('./images/blogimg.jpg') no-repeat;
+    background-size: 100% 100%;
+
+}
+.postcontent{
+    height: 143px;
+    width: 452px;
+    margin-right: 20px;
+}
+.articleprofile{
+    height: 20px;
+    width: 450px;
+    padding-bottom: 8px;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.articleprofileavatar{
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    
+
+}
+.forcingimgininfinite{
+    max-height: 1.5em !important;
+    max-width: 1.5em !important;
+    border-radius: 0 !important;
+}
+.articleprofilename{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    flex-wrap: wrap;
+    font-weight: 600;  
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.articleheading{
+    max-height: 56px;
+    max-width: 451px;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.onearticleline{
+    max-height:40px;
+    max-width: 450px; ;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    color: rgba(117, 117, 117, 1);
+    font-size: 16px;
+    line-height: 1.1em;
+    margin: 0;
+
+
+}
+
+.DTSection{
+height: 25px;
+width: 450px;
+max-width: 451px;
+max-height: 26px;
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-between;
+padding-top: 8px;
+}
+
+.profilesection{
+    height: 1500px;
+    width: 385px;
+    box-sizing: border-box;
+    display: flex;
+    /* background-color: blue; */
+
+}
+
+.keywordsection{
+    height: 160px;
+    width: 383px;
+    display: block;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding-bottom: 24px;
+    flex-direction: column;
+}
+.keywordsectioncoulmn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.discovertext{
+    text-transform: uppercase;
+    letter-spacing: 0.083em;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(41, 41, 41);
+}
+.discovertxt{
+    margin-bottom: 16px;
+    display: block;
+}
+.featurtags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags{
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 13px;
+    display: inline-block;
+    padding: 6px 16px;
+    margin: 0px 8px 8px 0px;
+    border-radius: 3px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    color: rgba(117, 117, 117, 1);
+}
+.footer{
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.footertext{
+    color: rgba(117, 117, 117, 1);
+    line-height: 20px;
+    font-size: 14px;
+    display: block;
+    margin: 0px 26px 0px 8px;
+}
+
+
+
+h2{
+    max-height:56px ;
+}
+h3{
+    max-height: 40px;
+    line-height: 1em;
+    padding-top: 4px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

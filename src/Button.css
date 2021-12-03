@@ -1,0 +1,22 @@
+.button_display{
+    height: 38px;
+    max-width:fit-content ;
+    box-sizing:inherit;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-radius: 99em;
+    border-style: solid;
+    background-color: #191919;
+    color: #ffffff;
+    padding: 7px 16px 9px;
+    font-size: 14px;
+    
+}
+.ex {
+    background-color: #ffffff;
+    color: #191919;
+}

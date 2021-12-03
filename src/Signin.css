@@ -1,0 +1,151 @@
+.Signin{
+    height: 636px;
+    width: 1294px;
+    max-height: 99%;
+    max-width: 99%;  
+    background-color: rgba(255, 255, 255, .95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Signinsection{
+    height: 695px;
+    width: 678px;  
+    background: rgb(255, 255, 255);
+    display: block;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+.Signinboxes{
+    height: 100%;
+    width: 100%;
+    min-height: 695px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.Signincontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 0 auto;
+    width: 360px;
+    padding: 44px 56px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.SGfiveelements{
+    height: 32px;
+    width: 180px;
+    box-sizing: border-box;
+    /* display: block; */
+    text-align: center;
+
+}
+.SGwelcometext{
+    display: block;
+    letter-spacing: -0.03em;
+    line-height: 32px;
+    font-size: 28px;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+    padding-bottom: 100px;
+    margin: 0px;
+}
+.SGbuttonlists{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    margin: 90px 0px 80px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+}
+
+.SGbuttonthing{
+    height: 41px;
+    width: 210px;
+    border: 1px solid #adadad;
+    border-radius:50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.SGcompanytext{
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgb(41, 41, 41);
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin : 10px 0px 5px 0px;
+}
+
+.SGgooglelogo{
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-color: black;
+    background: url('./images/google.png') no-repeat ;
+    background-size: 100% 100%;
+    margin: 8px 10px 10px 20px;
+}
+.SGfblogo{
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-color: black;
+    background: url('./images/Facebook-f.svg') no-repeat ;
+    background-size: 100% 100%;
+    margin: 8px 10px 10px 20px;
+}
+
+
+.SGdmaillogo{
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-color: black;
+    background: url('./images/dmail.png') no-repeat ;
+    background-size: 100% 100%;
+    margin: 8px 10px 10px 20px;
+}
+
+.SGnoaccountline{
+    height: 24px;
+    width: 250px ;
+    max-width:fit-content;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 17px;
+    text-align: center;
+    margin-block-end: 16px;
+    margin-block-end: 16px;
+}
+.SGgreencolor{
+    color: rgb(26, 137, 23);
+    cursor: pointer;
+}
+
+
+.SGlastsec{
+    height: 40px;
+    width: 450px;
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    line-height: 20px;
+}
+.SGtextdecor{
+    text-decoration: underline;
+    color: rgb(117, 117, 117);
+}

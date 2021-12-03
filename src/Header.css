@@ -1,0 +1,41 @@
+.OAHeader{
+    height: 400px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    background-color: #C4E2FF;
+}
+.headdata{
+    height: 340px;
+    width: 43%;
+    padding: 30px 0;
+    flex-direction: column;
+
+}
+.headcoma{
+    height: 400px;
+    width: 47%;
+    background:url('./images/hugecoma.png') no-repeat 69% 75%;
+    
+    display: flex;
+     padding-right: 0%;
+    /*padding-top: 4.5%; */
+}
+
+.mainheading{
+line-height: 74px;
+font-size: 70px;
+font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+font-weight: 400;
+margin: 0;
+}
+
+.itseasy{
+    font-weight: 400;
+    font-size: 18px;
+    list-style: 24px;
+    margin-top: 190px;
+    max-width: 440px;
+}
