@@ -17,33 +17,37 @@ function Login() {
 
                             <div className="buttonthing">
                                 <i className="googlelogo" ></i>
-                                <p className="companytext"> Sign in with Google</p>
+                                <p className="companytext"> Log in with Google</p>
                   
                             </div>
                             <div className="buttonthing">
                                 <i className="fblogo" ></i>
-                                <p className="companytext"> Sign in with Facebook</p>
+                                <p className="companytext"> Log in with Facebook</p>
                   
                             </div>
                             <div className="buttonthing">
                                 <i className="applelogo" ></i>
-                                <p className="companytext"> Sign in with Apple</p>
+                                <p className="companytext"> Log in with Apple</p>
                   
                             </div>
                             <div className="buttonthing">
                                 <i className="twitterlogo" ></i>
-                                <p className="companytext"> Sign in with Twitter</p>
+                                <p className="companytext"> Log in with Twitter</p>
                   
                             </div>
                             <div className="buttonthing">
+                            <Link to="loginVEP">
                                 <i className="dmaillogo" ></i>
-                                <p className="companytext"> Sign in with email</p>
+                            </Link>
+                            <Link to="loginVEP">
+                                <p className="companytext"> Log in with email</p>
+                            </Link>
                   
                             </div>
                             <div className="noaccountline">
-                                <p>No account?
+                                <p>Login by?
                                     <span className="greencolor" >
-                                        <Link to="loginVEP">Create one</Link>
+                                        <Link to="loginVEP"> User Name</Link>
                                     </span>
                                 </p>
                             </div>

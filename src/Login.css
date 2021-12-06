@@ -89,7 +89,7 @@
     color: rgb(41, 41, 41);
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    margin : 10px 0px 5px 0px;
+    margin : 10px 0px 5px 0px !important;
 }
 
 .googlelogo{

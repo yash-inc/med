@@ -27,16 +27,16 @@ function Signin() {
                         </div>
                             <div className="SGbuttonthing">
                                 
-                                <Link to="/login">
+                                <Link to="/signinVEUP">
                                     <i className="SGdmaillogo" ></i>
                                 </Link>
-                                <Link to="/login">
+                                <Link to="/signinVEUP">
                                     <p className="SGcompanytext"> Sign in with email</p>
                                 </Link>
             
                         </div>
                         <div className="SGnoaccountline">
-                                <p>Wanna Register your Self
+                                <p>Let's Start your Journy
                                     <Link to="/signinVEUP">    
                                         <span className="SGgreencolor" > Sign in </span>
                                     </Link>

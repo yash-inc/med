@@ -5,6 +5,7 @@ import Signin from "./Signin";
 import Home from "./Home";
 import LogInEP from "./LogInEP";
 import SignInEUP from "./SignInEUP";
+import UserInterfaceAL from "./UserInterfaceAL";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
          <Route path="/login" component={Login}/>
         <Route path="/signin" component={Signin} />
         <Route path="/loginVEP" component={LogInEP} />
-        <Route path="/signinVEUP" component={SignInEUP}/>
+        <Route path="/signinVEUP" component={SignInEUP} />
+        <Route path="/userinterfaceal" component={UserInterfaceAL} />
     </Switch>
   </Router>
         

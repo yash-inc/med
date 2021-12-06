@@ -1,6 +1,7 @@
 import { BrowserRouter as Link } from "react-router-dom";
 import './Infiniteblogposts.css'
 import faker from 'faker';
+import React from "react";
 function Infiniteblogposts() {
     return (
         <div className="infitescrollentiresection" >
@@ -22,9 +23,8 @@ function Infiniteblogposts() {
                                 </div>
 
                                 <div className="articleheading">
-                                
                                     <h2>{ faker.lorem.sentence()}</h2>
-                                
+                        
                                 </div>
                                 <div className="onearticleline">
                                     <h3>{ faker.lorem.paragraph()}</h3>
