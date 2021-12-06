@@ -1,4 +1,5 @@
 import react from 'react';
+import { BrowserRouter as Router,  Switch,  Route, Link } from "react-router-dom";
 import './Login.css'
 
 function Login() {
@@ -40,7 +41,11 @@ function Login() {
                   
                             </div>
                             <div className="noaccountline">
-                                <p>No account?<span className="greencolor" > Create one</span></p>                  
+                                <p>No account?
+                                    <span className="greencolor" >
+                                        <Link to="loginVEP">Create one</Link>
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <p className="lastsec">Click “Sign In” to agree to Medium’s <a href="https://medium.com/" className="">Terms of Service</a> and acknowledge that Medium’s  <a href="https://medium.com/" className="">Privacy Policy</a> applies to you.</p>

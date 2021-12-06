@@ -7,11 +7,9 @@ const Button = (props) => {
     <div className="button_display">
         <Link to="/login">
         
-        <a href="">{props.button_name} </a>
+        <a className="ex" href="">{props.button_name} </a>
         
       </Link>
-      
-          {/* </Link> */}
     </div>
   )
   

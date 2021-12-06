@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import Login from "./Login";
 import Signin from "./Signin";
 import Home from "./Home";
+import LogInEP from "./LogInEP";
+import SignInEUP from "./SignInEUP";
 
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
     <Switch>
          <Route exact path="/" component={Home}/>
          <Route path="/login" component={Login}/>
-         <Route path="/signin" component={Signin}/>
+        <Route path="/signin" component={Signin} />
+        <Route path="/loginVEP" component={LogInEP} />
+        <Route path="/signinVEUP" component={SignInEUP}/>
     </Switch>
   </Router>
         
@@ -46,10 +50,6 @@ export default App;
 //   }
 // }
 // export default App;
-
-
-
-
 
 
 

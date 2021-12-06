@@ -1,0 +1,89 @@
+ .LogInEP{
+    height: 636px;
+    width: 1294px;
+    max-height: 99%;
+    max-width: 99%;  
+    background-color: rgba(255, 255, 255, .95); 
+   /*  background-color: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.LogInEPsection{
+    height: 695px;
+    width: 678px;  
+    background: rgb(255, 255, 255);
+    display: block;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+
+}
+.LogInEPboxes{
+    height: 100%;
+    width: 100%;
+    min-height: 695px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: green; */
+
+}
+.LogInEPcontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 0 auto;
+    width: 360px;
+    padding: 44px 56px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+  
+}
+.maincoulmn{
+    text-align: center;
+    height: 32px;
+    width: 360px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+}
+.IPfield{
+    height: 38px;
+    width: 266px;
+    color:rgb(25, 25, 25);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500px;
+    padding: 0px;
+    border: none;
+    /* border-radius: 25px; */
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.accButt{
+    height: 38px;
+    width: 266px;
+    background-color:rgba(25, 25, 25, 1);
+    color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 25px;
+    text-decoration: none;
+    /* font-size: 14px;
+    font-weight: 400;
+    margin : 10px 0px 5px 0px; */
+}
+
