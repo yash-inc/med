@@ -1,15 +1,12 @@
 import './UserInterfaceAL.css';
 import React from 'react';
 import faker from 'faker';
+import InNav from './InNav';
 
 function UserInterfaceAL() {
     return (
         <div>
-            <nav className="UIFNavbase" >
-                <div className="UIFNav">
-                    <div className="UIFNavlogo" />
-                </div>
-            </nav>
+            <InNav />
             
             <div className="postsection">
                 <div className="middlepostsection">

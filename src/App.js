@@ -14,11 +14,11 @@ function App() {
     <Router>
     <Switch>
          <Route exact path="/" component={Home}/>
-         <Route path="/login" component={Login}/>
-        <Route path="/signin" component={Signin} />
-        <Route path="/loginVEP" component={LogInEP} />
-        <Route path="/signinVEUP" component={SignInEUP} />
-        <Route path="/userinterfaceal" component={UserInterfaceAL} />
+         <Route exact path="/login" component={Login}/>
+        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/loginVEP" component={LogInEP} />
+        <Route exact path="/signinVEUP" component={SignInEUP} />
+        <Route exact path="/userinterfaceal" component={UserInterfaceAL} />
     </Switch>
   </Router>
         

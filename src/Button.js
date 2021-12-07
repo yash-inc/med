@@ -6,10 +6,10 @@ import './Button.css';
 const Button = (props) => {
 
   return (
-    <div className="button_display">
+    <div className="button_display" target="_blank">
         <Link to="/login">
         
-        <a className="ex" href="">{props.button_name} </a>
+        <a className="ex"  href="">{props.button_name}</a>
         
       </Link>
     </div>
