@@ -3,6 +3,7 @@ import Header from "./Header";
 import Trending from './Trending';
 import Infiniteblogposts from './Infiniteblogposts'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
 // import Login from "./Login";
 // import Signin from "./Signin";
 

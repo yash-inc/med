@@ -1,4 +1,3 @@
-
 .UIFNavbase{
     display: block;
     background-color: rgba(255, 255, 255, 1);
@@ -42,20 +41,85 @@
     margin: 0px 68px;
 
 }
-.mainheading{
+.mainheadinginUIAL{
     height: auto;
     width: 100%;
     line-height:60px ;
-    font-weight: ;
+    font-weight: 500;
     font-size: 48px;
     color: rgba(41, 41, 41, 1);
     letter-spacing: .1rem;
 }
-.mainheaderimage{
-    height: 510px;
+.profiledetails{
+    height: 48px;
+    width: 680px;
+    display: block;
+    margin: 35px 0px;
+}
+.profiledetailstwosec{
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.userprofile{
+    height: 100%;
+    width: 25%;
+    /* background-color: black; */
+    display: flex;
+
+}
+.dp{
+    height: 73px;
+    width: 73px;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.dpf{
+    height: 48px;
+    width: 48px;
+    background: no-repeat ;
+    background-size: 100% 100%;
+    border-radius: 16px;
+}
+.usernameinUP{
+    height: fit-content;
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    font-weight: 600;
+    color: rgba(17, 17, 17, 1);
+    font-size: 16px;
+
+
+}
+.socialhandels{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+.mainheaderimage{
+    height: auto;
+    width: auto;
     max-width: 550px;
     max-width: 100%;
     background-color: black;
-    margin-top: 26px;
+    margin: auto;
+}
+.postarea{
+    height:1000px;
+    width: 100%;
+    font-size:medium;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 50px;
 }
