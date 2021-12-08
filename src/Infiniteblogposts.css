@@ -34,6 +34,15 @@
     display: block;
     /* background-color: yellow; */
 }
+.creatingflex{
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+
+}
 
 .post{
     height: 135px;

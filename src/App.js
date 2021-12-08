@@ -6,6 +6,7 @@ import Home from "./Home";
 import LogInEP from "./LogInEP";
 import SignInEUP from "./SignInEUP";
 import UserInterfaceAL from "./UserInterfaceAL";
+import Post from "./post";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/loginVEP" component={LogInEP} />
         <Route exact path="/signinVEUP" component={SignInEUP} />
         <Route exact path="/userinterfaceal" component={UserInterfaceAL} />
+        <Route exact path="/post" component={Post} />
     </Switch>
   </Router>
         

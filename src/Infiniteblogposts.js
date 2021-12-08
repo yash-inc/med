@@ -1,278 +1,79 @@
 import { BrowserRouter as Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import './Infiniteblogposts.css'
 import faker from 'faker';
-import React from "react";
 function Infiniteblogposts() {
+
+    const [users, setUser] = useState([])
+    useEffect(() => {
+        getUsers();
+       }, []
+    )
+    function getUsers() {
+        fetch("https://django-react-blog-application.herokuapp.com/get_blog/").then((result) => {
+            result.json().then((resp) => {
+                console.warn(resp)
+                setUser(resp)
+            })
+        })
+    }
+
     return (
         <div className="infitescrollentiresection" >
             <div className="infitescrolltwoblocks">
                 <div className="IScrolltwoCoulmn">
                     <div className="scrollsection">
-                        <div className="post">
-                       
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
                         
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            
-                            
-                            <a className="postimg">{ }</a>
-                           
-                        </div>
+                        <div className="creatingflex">
+                            {users.map((item, i) => {
+                                
+                                let ID = item.uuid;
+                                
+                                <div className="post">
                         
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
+                                    <div className="postcontent">
+                                        <div className="articleprofile">
+                                            <div className="articleprofileavatar">
+                                                <a href="/" className="ui avatar image">
+                                                    <img alt="..." className="forcingimgininfinite" src={item.image} />
+                                                </a>
+                                            </div>
+                                            <div className="articleprofilename">
+                                                <p className="articleprofilename">{item.user} </p>
+                                            </div>
+                                        </div>
 
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
+                                        <div className="articleheading">
+                                            <h2>{item.heading}</h2>
+                            
+                                        </div>
+                                        <div className="onearticleline">
+                                            <h3>{item.article}</h3>
+                                        
+                                        </div>
+                                        <div className="DTSection">
+                                            {/* <span>{faker.date.month()}</span>
+                                            <a>--</a>
+                                            <span>{faker.address.country()}</span> */}
+                                            id={i}
+                                            <button type="button">
+                                                <Link to={{
+                                                    pathname: "/post",
+                                                    value: { ID }
+                                                }}>
+                                                    <span>Read More</span></Link></button>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <img className="postimg" src={item.image}></img>
+                            
                                 </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
+                            }
+    
+                            )}
                         </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
 
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <button type="button"> <Link to="/signin"><span>Read More</span></Link></button>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
-                        {/*  */}
-                        <div className="post">
-                            <div className="postcontent">
-                                <div className="articleprofile">
-                                    <div className="articleprofileavatar">
-                                        <a href="/" className="ui avatar image">
-                                            <img alt="..." className="forcingimgininfinite" src={faker.image.avatar()} />
-                                        </a> 
-                                    </div>
-                                    <div className="articleprofilename">
-                                        <p className="articleprofilename">{faker.internet.userName()} aka {faker.name.firstName()}  {faker.name.lastName()} from {faker.address.cityName()} </p>
-                                    </div>
-                                </div>
-
-                                <div className="articleheading">
-                                    <h2>{ faker.lorem.sentence()}</h2>
-                                </div>
-                                <div className="onearticleline">
-                                    <h3>{ faker.lorem.paragraph()}</h3>
-                                    
-                                </div>
-                                <div className="DTSection">
-                                    <span>{faker.date.month()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.date.weekday()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.country()}</span>
-                                    <a>--</a>
-                                    <span>{ faker.address.zipCode()}</span>
-                                </div>
-                            </div>
-                            <a className="postimg"></a>
-                        </div>
 
 
                     </div>
