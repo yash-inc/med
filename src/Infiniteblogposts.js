@@ -1,10 +1,11 @@
 import { BrowserRouter as Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import './Infiniteblogposts.css'
-import faker from 'faker';
+import './Infiniteblogposts.css';
+import Post from "./Post";
 function Infiniteblogposts() {
 
     const [users, setUser] = useState([])
+    
     useEffect(() => {
         getUsers();
        }, []
@@ -14,10 +15,16 @@ function Infiniteblogposts() {
             result.json().then((resp) => {
                 console.warn(resp)
                 setUser(resp)
+                // console.log("yeh hai" + resp[0].uuid)
+                // setid(resp[0].uuid)
+                
             })
         })
     }
-
+    const [id, setid] = useState([])
+    var uuid = null
+    let ID =null
+    
     return (
         <div className="infitescrollentiresection" >
             <div className="infitescrolltwoblocks">
@@ -25,9 +32,8 @@ function Infiniteblogposts() {
                     <div className="scrollsection">
                         
                         <div className="creatingflex">
-                            {users.map((item, i) => {
-                                
-                                let ID = item.uuid;
+                            {users.map((item, i) => 
+                                // ID(item.id),
                                 
                                 <div className="post">
                         
@@ -36,6 +42,7 @@ function Infiniteblogposts() {
                                             <div className="articleprofileavatar">
                                                 <a href="/" className="ui avatar image">
                                                     <img alt="..." className="forcingimgininfinite" src={item.image} />
+                                                    
                                                 </a>
                                             </div>
                                             <div className="articleprofilename">
@@ -52,16 +59,17 @@ function Infiniteblogposts() {
                                         
                                         </div>
                                         <div className="DTSection">
-                                            {/* <span>{faker.date.month()}</span>
-                                            <a>--</a>
-                                            <span>{faker.address.country()}</span> */}
-                                            id={i}
+                                            
+                                            <a>id={item.uuid}</a>
+                                            <Post id={item.uuid}/>
+                                             
                                             <button type="button">
                                                 <Link to={{
                                                     pathname: "/post",
-                                                    value: { ID }
+                                                    ID : item.uuid,
                                                 }}>
-                                                    <span>Read More</span></Link></button>
+                                                    <>Read More</></Link></button> 
+                                            
                                         </div>
                                     </div>
                                 
@@ -69,7 +77,7 @@ function Infiniteblogposts() {
                                     <img className="postimg" src={item.image}></img>
                             
                                 </div>
-                            }
+                            
     
                             )}
                         </div>

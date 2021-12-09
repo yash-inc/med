@@ -6,7 +6,8 @@ import Home from "./Home";
 import LogInEP from "./LogInEP";
 import SignInEUP from "./SignInEUP";
 import UserInterfaceAL from "./UserInterfaceAL";
-import Post from "./post";
+
+import Post from "./Post";
 
 
 function App() {
