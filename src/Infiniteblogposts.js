@@ -15,15 +15,14 @@ function Infiniteblogposts() {
             result.json().then((resp) => {
                 console.warn(resp)
                 setUser(resp)
-                // console.log("yeh hai" + resp[0].uuid)
-                // setid(resp[0].uuid)
+
                 
             })
         })
     }
     const [id, setid] = useState([])
-    var uuid = null
-    let ID =null
+    // var uuid = null
+    // let ID =null
     
     return (
         <div className="infitescrollentiresection" >
@@ -33,7 +32,10 @@ function Infiniteblogposts() {
                         
                         <div className="creatingflex">
                             {users.map((item, i) => 
-                                // ID(item.id),
+                                // // ID(item.id),
+                                // useEffect(() => {
+                                //     localStorage.setItem("id", JSON.stringify(uuid));
+                                //   }, [uuid]);
                                 
                                 <div className="post">
                         
@@ -60,15 +62,16 @@ function Infiniteblogposts() {
                                         </div>
                                         <div className="DTSection">
                                             
-                                            <a>id={item.uuid}</a>
-                                            <Post id={item.uuid}/>
-                                             
+                                            {/* <a>id={item.uuid}</a> */}
+                                            {/* <Post id={item.uuid} /> */}
+                                            
+{/*                                              
                                             <button type="button">
-                                                <Link to={{
+                                                {/* <Link to={{
                                                     pathname: "/post",
                                                     ID : item.uuid,
-                                                }}>
-                                                    <>Read More</></Link></button> 
+                                                }}> */}
+                                                    {/* <>Read More</></Link></button>  */} 
                                             
                                         </div>
                                     </div>
@@ -128,3 +131,5 @@ function Infiniteblogposts() {
  }
 
 export default Infiniteblogposts
+
+

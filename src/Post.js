@@ -19,8 +19,8 @@ const Post = (props) => {
   //  let Id = Location.id;
   //  let Id = Location.state.Id;
 
-  console.log(Location.data.id, " Location.data.Id id here new");
-  console.log("this is my props", props)
+  // console.log(Location.data.id, " Location.data.Id id here new");
+  // console.log("this is my props", props)
 
   // useEffect(() => {
   //   axios(` https://django-react-blog-application.herokuapp.com/blog/${Id} `)
